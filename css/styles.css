@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
     margin-block-start: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -18,9 +21,7 @@ body{
 }
 .container{
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -44,6 +45,10 @@ a:hover{
     padding: 1px 0;
     width: 60%;
 }
+
+.topnav:hover{
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
 .topnav a{
     display: inline-block;
     font-weight: 700;
@@ -53,31 +58,7 @@ a:hover{
 .topnav .icon {
     display: none;
 }
-@media screen and (max-width: 1200px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {	
-      float: none;
-      display: block;
-      text-align: left;
-    }
-}
-footer{
+#footer{
     position: fixed;
     bottom: 10px;
     z-index: 1;
@@ -87,20 +68,22 @@ footer{
     padding: 1px 0 8px 0;
     width: 60%;
 }
-footer a{
+#footer:hover{
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
+#footer a{
     margin: 0 20px;
     font-size: medium;
 }
-
 /* ############################################################# */
 /* ####################### Main content ######################## */
 /* ############################################################# */
 
-#content{
-    margin-top: 12px;
+.content{
+    margin-top: 42px;
 }
 #avt{
-    width: 32%;
+    width: 49%;
     height: fit-content;
     padding: 20px;
     background-color:rgba(255, 255, 255, 0.7);
@@ -128,21 +111,23 @@ footer a{
     font-size: small;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 8px;
+    border-radius: 6px;
+}
+#avt div:hover{
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
 }
 .bio{
     padding: 7px 20px;
     width: fit-content;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgba(255, 255, 255, 0.8);
     font-size: large;
     border-radius: 6px;
 }
 .bio:hover{
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.9);
 }
-
 #about-me .bio{
-    width: 57%;
+    width: 49%;
     padding: 20px;
     position: relative;
     float: right;
@@ -152,7 +137,7 @@ footer a{
 .clear{
     clear: both;
 }
-h3{
+.content h3{
     align-self: flex-end;
     text-align: center;
     width: 110px;
@@ -160,8 +145,11 @@ h3{
     background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
     border-radius: 6px;
 }
+.content h3:hover{
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
 #projects .bio{
-    width: 47.85%;
+    width: 49%;
     padding: 7px;
 }
 #projects .bio.left{
@@ -177,14 +165,113 @@ h3{
     margin: 0 0 10px 40px;
 }
 #skills{
-    margin-bottom: 38px;
+    margin-bottom: 58px;
 }
 #skills .bio{
     display: inline-block;
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1200px){
+    #avt{
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #about-me .bio, #projects .bio{
+        clear: both;
+        width: 100%;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a:first-child{
+        float: left;   
+    }
+    .topnav a.icon {
+        display: block;
+        float: right;
+        margin-top: -4px;
+    }
+    .topnav.responsive {
+        position: fixed;
+        top: 0;
+    }
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {	
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container, .topnav, #footer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #footer{
+        position: static;
+        width: 100%;
+    }
+    #footer a{
+        display: block;
+    }
+    #skills{
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    #avt{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 600px){
+    #avt{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    #avt{
+        width: 100%;
+    }
+}
 /* ############################################################# */
 /* ################## Custom for contact.html ################## */
 /* ############################################################# */
 
+#contact-form{
+    background-color:rgba(255, 255, 255, 0.8);
+    margin-top: 52px;
+    border-radius: 16px;
+    padding: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  input[type=submit] {
+    background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
+    color: black;
+    font-weight: 700;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+  input[type=submit]:hover {
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
