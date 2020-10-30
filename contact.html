@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me <3</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="author" content="hoangkim1711">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html#about-me">About me</a>
+            <a href="index.html#edu">Education</a>
+            <a href="#">Experience</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+        <div id="content">
+        </div>
+
+        <footer id="footer">
+            <a href="https://www.linkedin.com/in/hoangkim1711/" target="_blank"><i class="fa fa-linkedin-square"
+                    aria-hidden="true"></i> Linkedin</a>
+            <a href="https://www.facebook.com/hoangkim1711" target="_blank"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i> Facebook</a>
+            <a href="https://github.com/hoangkim1711" target="_blank"><i class="fa fa-github-square"
+                    aria-hidden="true"></i> Github</a>
+            <a href="mailto:hoangkim1711@gmail.com" target="_blank"><i class="fa fa-envelope" 
+                    aria-hidden="true"></i> Email</a>
+        </footer>
+    </div>
+</body>
+</html>
