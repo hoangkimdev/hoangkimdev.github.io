@@ -13,7 +13,7 @@ body{
     font-family:    -apple-system, BlinkMacSystemFont, 'Segoe UI', 
                     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
                     'Helvetica Neue', sans-serif;
-    background-image: url("../img/contact-me.jpg");
+    background-image: url("../img/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -137,10 +137,10 @@ a:hover{
 .clear{
     clear: both;
 }
-.content h3{
+.mark-h3{
     align-self: flex-end;
     text-align: center;
-    width: 110px;
+    width: 120px;
     padding: 4px 0;
     background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
     border-radius: 6px;
@@ -167,22 +167,14 @@ a:hover{
 #skills{
     margin-bottom: 58px;
 }
-#skills .bio{
+.bio.inline{
     display: inline-block;
     margin-right: 10px;
 }
-
+/* ############################################################# */
+/* ######################### Reponsive ######################### */
+/* ############################################################# */
 @media screen and (max-width: 1200px){
-    #avt{
-        float: none;
-        display: block;
-        margin: auto;
-        margin-top: 50px;
-    }
-    #about-me .bio, #projects .bio{
-        clear: both;
-        width: 100%;
-    }
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -192,11 +184,12 @@ a:hover{
     .topnav a.icon {
         display: block;
         float: right;
-        margin-top: -4px;
+        margin-top: -6px;
     }
     .topnav.responsive {
         position: fixed;
         top: 0;
+        opacity: 0.9;
     }
     .topnav.responsive .icon {
       position: absolute;
@@ -209,38 +202,26 @@ a:hover{
       text-align: left;
     }
 }
-
 @media screen and (max-width: 1000px){
     .container, .topnav, #footer{
         width: 90%;
     }
 }
 
-@media screen and (max-width: 800px){
-    #footer{
-        position: static;
-        width: 100%;
-    }
-    #footer a{
-        display: block;
-    }
-    #skills{
-        margin-bottom: 0;
-    }
-}
 @media screen and (max-width: 700px){
     #avt{
-        width: 65%;
-    }
-}
-@media screen and (max-width: 600px){
-    #avt{
-        width: 80%;
-    }
-}
-@media screen and (max-width: 500px){
-    #avt{
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
         width: 100%;
+    }
+    #about-me .bio, #projects .bio{
+        clear: both;
+        width: 100%;
+    }
+    #footer span{
+        display: none;
     }
 }
 /* ############################################################# */
@@ -253,7 +234,7 @@ a:hover{
     border-radius: 16px;
     padding: 20px;
 }
-input[type=text], select, textarea {
+#contact-form input[type=text], #contact-form select, #contact-form textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -263,7 +244,10 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-  input[type=submit] {
+#contact-form textarea{
+    height: 200px;
+}
+#contact-form input[type=submit] {
     background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
     color: black;
     font-weight: 700;
@@ -272,6 +256,12 @@ input[type=text], select, textarea {
     border-radius: 6px;
     cursor: pointer;
 }
-  input[type=submit]:hover {
+#contact-form input[type=submit]:hover {
     background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
+#contact-info {
+    margin-bottom: 58px;
+}
+.mark-h3.long{
+    width: 220px;
 }

@@ -1,5 +1,5 @@
 <!--
-    author: hoangkim1711 @2020
+    author: hoangkim1711 | October @2020
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="author" content="hoangkim1711">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -22,26 +23,15 @@
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
         </div>
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
 
         <div class="content">
             <div id="about-me">
                 <div id="avt">
-                    <img src="./img/me.jpg">
+                    <img src="./img/me.jpg" alt="Kim's avt">
                     <p>I'm <b>Đinh Hoàng Kim</b></p>
-                    <div>DEVELOPER</div>
+                    <div>4th YEAR STUDENT</div>
                 </div>
                 <div class="bio">
                     Hello everyone, welcome to Kim's profile!!!
@@ -55,7 +45,7 @@
                 <div class="clear"></div>
             </div>
             <div id="edu">
-                <h3>Education</h3>
+                <h3 class="mark-h3">Education</h3>
                 <div class="bio">
                     <a href="https://www.hcmut.edu.vn/" target="_blank">University: Ho Chi Minh city University of
                         Technology</a>
@@ -63,9 +53,12 @@
                 <div class="bio">
                     <a href="http://www.cse.hcmut.edu.vn/site/" target="_blank">Major: Computer Science</a>
                 </div>
+                <div class="bio">
+                    Degree: Engineer
+                </div>
             </div>
             <div id="projects">
-                <h3>Projects</h3>
+                <h3 class="mark-h3">Projects</h3>
                 <div class="bio left">
                     <h4>[Personal] Kim's github page</h4>
                     <ul>
@@ -98,26 +91,25 @@
                 <div class="clear"></div>
             </div>
             <div id="skills">
-                <h3>Skills</h3>
-                <div class="bio">React Native, Google Firebase</div>
-                <div class="bio">Java, Java Spring MVC, MySQL</div>
-                <div class="bio">HTML, CSS, JavaScript</div>
-                <div class="bio">C#, Winform, MSSQL Server</div>
-                <div class="bio">Git, Github, Gitlab</div>
+                <h3 class="mark-h3">Skills</h3>
+                <div class="bio inline">React Native, Google Firebase</div>
+                <div class="bio inline">Java, Java Spring MVC, MySQL</div>
+                <div class="bio inline">HTML, CSS, JavaScript</div>
+                <div class="bio inline">C#, Winform, MSSQL Server</div>
+                <div class="bio inline">Git, Github, Gitlab</div>
             </div>
         </div>
 
         <div id="footer">
             <a href="https://www.linkedin.com/in/hoangkim1711/" target="_blank"><i class="fa fa-linkedin-square"
-                    aria-hidden="true"></i> Linkedin</a>
+                    aria-hidden="true"></i><span> Linkedin</span></a>
             <a href="https://www.facebook.com/hoangkim1711" target="_blank"><i class="fa fa-facebook-square"
-                    aria-hidden="true"></i> Facebook</a>
+                    aria-hidden="true"></i><span> Facebook</span></a>
             <a href="https://github.com/hoangkim1711" target="_blank"><i class="fa fa-github-square"
-                    aria-hidden="true"></i> Github</a>
-            <a href="mailto:hoangkim1711@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>
-                Email</a>
+                    aria-hidden="true"></i><span> Github</span></a>
+            <a href="mailto:hoangkim1711@gmail.com" target="_blank"><i class="fa fa-envelope" 
+                    aria-hidden="true"></i><span> Email</span></a>
         </div>
     </div>
 </body>
-
 </html>
