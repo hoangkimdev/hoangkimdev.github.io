@@ -126,7 +126,7 @@ a:hover{
 .bio:hover{
     background-color:rgba(255, 255, 255, 0.9);
 }
-#about-me .bio{
+.bio.about{
     width: 49%;
     padding: 20px;
     position: relative;
@@ -148,20 +148,21 @@ a:hover{
 .content h3:hover{
     background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
 }
-#projects .bio{
+
+.bio.left{
+    float: left;
     width: 49%;
     padding: 7px;
 }
-#projects .bio.left{
-    float: left;
-}
-#projects .bio.right{
+.bio.right{
     float: right;
+    width: 49%;
+    padding: 7px;
 }
-#projects .bio h4{
+.bio h4{
     margin-left: 20px;
 }
-#projects .bio ul{
+.bio ul{
     margin: 0 0 10px 40px;
 }
 #skills{
@@ -202,7 +203,7 @@ a:hover{
       text-align: left;
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
     .container, .topnav, #footer{
         width: 90%;
     }
