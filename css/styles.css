@@ -19,6 +19,36 @@ body{
     background-attachment: fixed;
     background-position: center;
 }
+.body.abo{
+    background-image: url("../img/about.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
+.body.edu{
+    background-image: url("../img/edu.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
+.body.exp{
+    background-image: url("../img/about.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
+.body.pro{
+    background-image: url("../img/about.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
+.body.ski{
+    background-image: url("../img/skills.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
+.body.con{
+    background-image: url("../img/contact.jpg");
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+}
 .container{
     width: 60%;
     margin: auto;
@@ -126,6 +156,9 @@ a:hover{
 .bio:hover{
     background-color:rgba(255, 255, 255, 0.9);
 }
+.bio.full{
+    width: 100%;
+}
 .bio.about{
     width: 49%;
     padding: 20px;
@@ -159,18 +192,49 @@ a:hover{
     width: 49%;
     padding: 7px;
 }
+.bio.inline{
+    display: inline-block;
+    margin-right: 10px;
+}
+.select.bio{
+    background-color:rgba(255, 255, 255, 1);
+}
 .bio h4{
     margin-left: 20px;
 }
 .bio ul{
     margin: 0 0 10px 40px;
 }
-#skills{
+#contact input[type=text], #contact select, #contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#contact textarea{
+    height: 200px;
+}
+#contact input[type=submit] {
+    background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
+    color: black;
+    font-weight: 700;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#contact input[type=submit]:hover {
+    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
+}
+#contact{
     margin-bottom: 58px;
 }
-.bio.inline{
-    display: inline-block;
-    margin-right: 10px;
+.mark-h3.long{
+    width: 220px;
 }
 /* ############################################################# */
 /* ######################### Reponsive ######################### */
@@ -224,45 +288,4 @@ a:hover{
     #footer span{
         display: none;
     }
-}
-/* ############################################################# */
-/* ################## Custom for contact.html ################## */
-/* ############################################################# */
-
-#contact-form{
-    background-color:rgba(255, 255, 255, 0.8);
-    margin-top: 52px;
-    border-radius: 16px;
-    padding: 20px;
-}
-#contact-form input[type=text], #contact-form select, #contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-#contact-form textarea{
-    height: 200px;
-}
-#contact-form input[type=submit] {
-    background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
-    color: black;
-    font-weight: 700;
-    padding: 8px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-#contact-form input[type=submit]:hover {
-    background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
-}
-#contact-info {
-    margin-bottom: 58px;
-}
-.mark-h3.long{
-    width: 220px;
 }

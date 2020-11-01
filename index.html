@@ -14,15 +14,15 @@
     <script src="js/script.js"></script>
 </head>
 
-<body>
+<body class="body" id="body">
     <div class="container">
         <div class="topnav" id="myTopnav">
-            <a href="#about-me">About me</a>
-            <a href="#edu">Education</a>
-            <a href="#">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="contact.html">Contact</a>
+            <a href="#about-me" onclick="openAbo();closeNav();">About me</a>
+            <a href="#edu" onclick="openEdu();closeNav();">Education</a>
+            <a href="#" onclick="openExp();closeNav();">Experience</a>
+            <a href="#projects" onclick="openPro();closeNav();">Projects</a>
+            <a href="#skills" onclick="openSki();closeNav();">Skills</a>
+            <a href="#contact" onclick="openCon();closeNav();">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
         </div>
 
@@ -64,8 +64,6 @@
                     <ul>
                         <li>October 2020</li>
                         <li><a href="https://hoangkim1711.github.io/">hoangkim1711.github.io</a></li>
-                        <li><a href="https://github.com/hoangkim1711/hoangkim1711.github.io" target="_blank">Link source
-                                code in github</a></li>
                     </ul>
                 </div>
                 <div class="bio right">
@@ -97,6 +95,37 @@
                 <div class="bio inline">HTML, CSS, JavaScript</div>
                 <div class="bio inline">C#, Winform, MSSQL Server</div>
                 <div class="bio inline">Git, Github, Gitlab</div>
+            </div>
+        </div>
+
+        <!-- <div id="contact">
+            <h3 class="mark-h3 long">Send me email</h3>
+            <form class="bio full" action="mailto:hoangkim1711@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="Name" placeholder="Your name..">
+                <input type="text" name="Phone number" placeholder="Your phone number..">
+                <textarea name="Content" placeholder="Write something.."></textarea>
+        
+                <input type="submit" value="Send">
+            </form>
+        </div> -->
+
+        <div id="contact">
+            <h3 class="mark-h3">Contact</h3>
+            <div class="bio inline">
+                <a href="https://www.linkedin.com/in/hoangkim1711" target="_blank"><i class="fa fa-linkedin-square"
+                        aria-hidden="true"></i><span> linkedin.com/in/hoangkim1711</span></a>
+            </div>
+            <div class="bio inline">
+                <a href="https://www.facebook.com/hoangkim1711" target="_blank"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i><span> facebook.com/hoangkim1711</span></a>
+            </div>
+            <div class="bio inline">
+                <a href="https://github.com/hoangkim1711" target="_blank"><i class="fa fa-github-square"
+                    aria-hidden="true"></i><span> github.com/hoangkim1711</span></a>
+            </div>
+            <div class="bio inline">
+                <a href="mailto:hoangkim1711@gmail.com" target="_blank"><i class="fa fa-envelope" 
+                    aria-hidden="true"></i><span> hoangkim1711@gmail.com</span></a>
             </div>
         </div>
 
