@@ -182,22 +182,19 @@ a:hover{
     background:linear-gradient(90deg, #66a6ff 0%,#89f7fe 100% );
 }
 
-.bio.left{
+.left{
     float: left;
     width: 49%;
     padding: 7px;
 }
-.bio.right{
+.right{
     float: right;
     width: 49%;
     padding: 7px;
 }
-.bio.inline{
+.inline{
     display: inline-block;
     margin-right: 10px;
-}
-.select.bio{
-    background-color:rgba(255, 255, 255, 1);
 }
 .bio h4{
     margin-left: 20px;
@@ -281,7 +278,7 @@ a:hover{
         margin-top: 50px;
         width: 100%;
     }
-    #about-me .bio, #projects .bio{
+    #about-me .bio, #projects .bio, #exp .bio{
         clear: both;
         width: 100%;
     }
