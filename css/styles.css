@@ -21,33 +21,33 @@ body{
 }
 .body.abo{
     background-image: url("../img/about.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .body.edu{
     background-image: url("../img/edu.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .body.exp{
     background-image: url("../img/about.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .body.pro{
     background-image: url("../img/about.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .body.ski{
     background-image: url("../img/skills.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .body.con{
     background-image: url("../img/contact.jpg");
-    -webkit-transition: background-image 0.4s ease-in-out;
-    transition: background-image 0.4s ease-in-out;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 .container{
     width: 60%;
