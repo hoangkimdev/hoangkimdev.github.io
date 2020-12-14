@@ -149,11 +149,11 @@ a:hover{
 .bio{
     padding: 7px 20px;
     width: fit-content;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(255, 255, 255, 0.7);
     font-size: large;
     border-radius: 6px;
 }
-.bio:hover{
+.bio:hover, #avt:hover{
     background-color:rgba(255, 255, 255, 0.9);
 }
 .bio.full{
